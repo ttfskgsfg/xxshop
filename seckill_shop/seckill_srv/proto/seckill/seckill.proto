@@ -1,0 +1,18 @@
+syntax = "proto3";
+package zhiliao_seckill_srv;
+
+
+service SecKill {
+    rpc FrontSecKill (SecKillRequest) returns (SecKillResponse){}
+
+}
+
+message SecKillRequest {
+    int32 id = 1;
+    string front_user_email = 2;
+}
+
+message SecKillResponse {
+    int32 code = 1;
+    string msg = 2;
+}
