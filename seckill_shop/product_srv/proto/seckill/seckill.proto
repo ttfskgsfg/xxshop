@@ -1,0 +1,104 @@
+syntax = "proto3";
+package zhiliao_product_srv;
+
+
+service SecKills {
+    rpc SecKillList(SecKillsRequest) returns (SecKillsResponse){}
+    rpc GetProducts (ProductRequest) returns (ProductResponse) {}
+    rpc SecKillAdd (SecKill) returns (SecKillResponse){}
+    rpc SecKillDel (SecKillDelRequest) returns (SecKillResponse){}
+    rpc SecKillToEdit (SecKillDelRequest) returns (SecKillToEditResponse){}
+    rpc SecKillDoEdit (SecKill) returns (SecKillResponse){}
+
+    rpc FrontSecKillList (FrontSecKillRequest) returns (FrontSecKillResponse){}
+    rpc FrontSecKillDetail (SecKillDelRequest) returns (FrongSecKillDetailResponse){}
+
+}
+
+message FrontSecKillRequest{
+    int32 current_page = 1;
+    int32 pagesize = 2;
+
+}
+
+message FrongSecKillDetailResponse {
+    int32 code = 1;
+    string msg = 2;
+    SecKill seckill = 3;
+
+}
+
+message FrontSecKillResponse {
+    int32 code = 1;
+    string msg = 2;
+    repeated SecKill seckill_list = 3;
+    int32 current = 4;
+    int32 page_size = 5;
+    int32 total_page = 6;
+
+}
+
+
+message SecKillToEditResponse {
+    int32 code =1;
+    string msg = 2;
+    SecKill seckill =3;
+    repeated Product products_no =4;
+
+}
+
+message SecKillDelRequest {
+    int32 id = 1;
+}
+
+message SecKillResponse {
+    int32 code = 1;
+    string msg = 2;
+}
+message ProductRequest {
+
+}
+
+message ProductResponse {
+    int32 code = 1;
+    string msg = 2;
+    repeated Product products =3;
+}
+
+message Product {
+    int32 id = 1;
+    string pname = 2;
+}
+
+
+message SecKillsRequest {
+    int32 current_page = 1;
+    int32 pagesize = 2;
+}
+
+
+message SecKillsResponse {
+    int32 code = 1;
+    string msg = 2;
+    repeated SecKill seckills =3;
+    int32 total= 4;
+    int32 current = 5;
+    int32 page_size = 6;
+}
+
+
+message SecKill {
+    int32 id = 1;
+    string name = 2;
+    float price = 3;
+    int32 num = 4;
+    int32 pid = 5;
+    string pname = 6;
+    string start_time = 7;
+    string end_time = 8;
+    string create_time = 9;
+    string pic = 10;
+    float p_price = 11;
+    string pdesc = 12;
+    string unit = 13;
+}
