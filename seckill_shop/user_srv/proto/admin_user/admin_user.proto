@@ -1,0 +1,46 @@
+syntax = 'proto3';
+package zhiliao_user_srv;
+
+
+
+service AdminUser {
+    rpc AdminUserLogin(AdminUserRequest) returns (AdminUserResponse){}
+    rpc FrontUserList(FrontUsersRequest) returns (FrontUsersResponse){}
+}
+
+
+
+message FrontUsersRequest {
+    int32 current_page = 1;
+    int32 pagesize = 2;
+}
+
+message FrontUsersResponse {
+    int32 code = 1;
+    string msg = 2;
+    repeated FrontUser front_users =3;
+    int32 total= 4;
+    int32 current = 5;
+    int32 page_size = 6;
+}
+
+message FrontUser {
+    string email = 1;
+    string desc = 2;
+    string status = 3;
+    string create_time = 4;
+}
+
+
+
+message AdminUserRequest {
+    string username = 1;
+    string password = 2;
+}
+
+
+message AdminUserResponse {
+    int32 code = 1;
+    string msg = 2;
+    string user_name = 3;
+}
