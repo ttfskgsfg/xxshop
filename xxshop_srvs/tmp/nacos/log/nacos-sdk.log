@@ -1,0 +1,140 @@
+2023-08-16T17:45:55.221+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-16T17:47:50.665+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T16:22:47.167+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T16:24:05.270+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:38:10.776+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:38:12.803+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json&group=pro": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it.> , result:<>
+2023-08-17T17:38:14.818+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it.> , result:<>
+2023-08-17T17:38:16.852+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it.> , result:<>
+2023-08-17T17:38:16.852+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it. 
+2023-08-17T17:38:37.237+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:38:37.241+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": EOF> , result:<>
+2023-08-17T17:38:37.244+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json": EOF> , result:<>
+2023-08-17T17:38:37.247+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json&group=pro": EOF> , result:<>
+2023-08-17T17:38:37.247+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:Get "http://127.0.0.1:8848/nacos/v1/cs/configs?tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json&group=pro": EOF 
+2023-08-17T17:40:01.697+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:44:07.343+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:44:33.519+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:50:36.389+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:50:46.661+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:52:09.294+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:55:21.429+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T17:57:44.667+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:00:35.328+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:02:06.212+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:05:10.862+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:18:47.804+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:24:30.038+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:25:37.452+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:29:00.856+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:29:51.571+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:30:29.853+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T18:32:35.302+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:42:12.383+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:42:12.389+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": EOF> , result:<>
+2023-08-17T20:42:12.391+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json&group=pro": EOF> , result:<>
+2023-08-17T20:42:12.393+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": EOF> , result:<>
+2023-08-17T20:42:12.394+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": EOF 
+2023-08-17T20:46:10.494+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:48:04.808+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:50:04.597+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:52:26.789+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:53:38.284+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T20:56:20.646+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T21:50:59.628+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T21:54:15.546+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:00:31.448+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:03:10.474+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:15:35.138+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:16:06.225+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:16:55.295+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:20:24.755+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:24:43.871+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:26:04.112+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:34:40.239+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-17T22:35:46.222+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T00:15:58.005+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T00:18:22.618+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T00:18:56.049+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T00:20:39.708+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T13:53:08.823+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T13:57:39.090+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T13:59:41.303+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T14:03:25.405+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T14:08:49.765+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T14:09:32.179+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T16:51:38.277+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T16:51:38.284+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json&group=pro": EOF> , result:<>
+2023-08-18T16:51:38.290+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3&dataId=goods-srv.json&group=pro": EOF> , result:<>
+2023-08-18T16:51:38.293+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"7a829ef3-1663-4b06-b120-53960bc3a6b3"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": EOF> , result:<>
+2023-08-18T16:51:38.294+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=pro&tenant=7a829ef3-1663-4b06-b120-53960bc3a6b3": EOF 
+2023-08-18T16:52:04.602+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T16:54:14.745+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T16:57:37.121+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:00:08.063+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:11:23.599+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:13:18.594+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:21:57.899+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:22:57.570+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:24:04.222+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:24:58.847+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:35:56.419+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:36:46.183+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T17:42:05.546+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T23:55:44.737+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-18T23:58:51.187+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T00:06:51.812+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T17:32:18.822+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T21:47:12.905+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T21:51:09.449+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:09:39.159+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:14:03.358+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:25:46.070+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:26:13.129+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:30:57.325+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:32:49.520+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T22:52:47.811+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T23:09:54.657+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-19T23:49:27.724+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T15:51:01.858+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T16:18:18.212+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T16:25:52.069+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T16:45:55.845+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T16:48:52.401+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T16:55:58.046+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T23:21:32.228+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-20T23:21:52.865+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:10:39.160+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:16:24.397+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:16:24.409+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"77b124a69-0e65-40a1-ad42-0b9ac65ccbeb"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2023-08-21T00:16:24.415+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"77b124a69-0e65-40a1-ad42-0b9ac65ccbeb"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2023-08-21T00:16:24.421+0800	[31mERROR[0m	nacos_server/nacos_server.go:199	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"pro","tenant":"77b124a69-0e65-40a1-ad42-0b9ac65ccbeb"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2023-08-21T00:16:24.421+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:[404] config data not exist
+ 
+2023-08-21T00:16:24.422+0800	[33mWARN[0m	config_client/config_client.go:207	[client.GetConfig] config not found, dataId: goods-srv.json, group: pro, namespaceId: 77b124a69-0e65-40a1-ad42-0b9ac65ccbeb.
+2023-08-21T00:17:37.263+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:17:52.395+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:19:05.848+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:20:15.045+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:22:56.646+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T00:28:47.320+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T01:15:02.444+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T01:21:19.610+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T01:26:56.873+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T01:28:22.132+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T05:14:23.911+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T05:14:35.009+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T05:34:53.805+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T05:36:20.413+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T05:50:00.935+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T05:53:46.023+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T16:04:55.671+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T18:22:12.943+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T18:30:10.795+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-21T18:30:18.424+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>

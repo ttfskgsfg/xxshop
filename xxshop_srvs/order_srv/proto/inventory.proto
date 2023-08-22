@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option go_package = ".;proto";
+
+//第一种 web层商品保存商品信息，保存完信息后调用库存接口
+//第二种 srv层调用
+service Inventory {
+  rpc SetInv(GoodsInvInfo) returns(google.protobuf.Empty); //设置库存
+  rpc InvDetail(GoodsInvInfo) returns(GoodsInvInfo); //获取库存信息
+  //要考虑是否扣减成功
+  rpc Sell(SellInfo) returns (google.protobuf.Empty) ;  //扣减库存  //买东西从购物车买 批量扣减考虑事务性问题
+  rpc Reback(SellInfo) returns (google.protobuf.Empty); //库存归还
+}
+
+message GoodsInvInfo {
+  int32 goodsId = 1;
+  int32 num = 2;
+}
+
+message SellInfo {
+  repeated GoodsInvInfo goodsInfo = 1;
+}
+
