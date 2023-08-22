@@ -32,7 +32,7 @@ elasticsearch
 
 
 快速启动
-先配置nacos配置文件
+先配置nacos配置文件。nacos命令空间为user、goods、inventory、orders
 
 
 docker安装配置命令 地址端口号供参考
