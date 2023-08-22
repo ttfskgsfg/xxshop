@@ -24,10 +24,13 @@ elasticsearch
 
 阿里云oss
 
+
 项目整体框架: 图片优化中
+
 
 快速启动
 先配置nacos配置文件
+
 
 docker安装配置命令 地址端口号供参考
 
