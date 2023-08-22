@@ -1,0 +1,254 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option go_package = ".;proto";
+
+service Goods {
+  //商品接口
+  rpc GoodsList(GoodsFilterRequest) returns (GoodsListResponse);  //用户列表
+  //处理通过前端传来的批量获取商品信息请求 用户提交订单时查询
+  rpc BatchGetGoods(BatchGoodsIdInfo) returns (GoodsListResponse);  //
+  rpc CreateGoods(CreateGoodsInfo) returns (GoodsInfoResponse);  //
+  rpc DeleteGoods(DeleteGoodsInfo)  returns(google.protobuf.Empty); //
+  rpc UpdateGoods(CreateGoodsInfo) returns (google.protobuf.Empty); //
+  rpc GetGoodsDetail(GoodsInfoRequest) returns (GoodsInfoResponse);  //
+
+  //商品分类
+  rpc GetAllCategorysList(google.protobuf.Empty) returns(CategoryListResponse);
+  //获取子分类
+  rpc GetSubCategory(CategoryListRequest) returns(SubCategoryListResponse);
+  rpc CreateCategory(CategoryInfoRequest) returns (CategoryInfoResponse);  //新建分类信息
+  rpc DeleteCategory(DeleteCategoryRequest)  returns(google.protobuf.Empty); //删除分类
+  rpc UpdateCategory(CategoryInfoRequest) returns (google.protobuf.Empty); //修改分类
+
+
+  //品牌和轮播图
+  //品牌方面
+  rpc BrandList(BrandFilterRequest) returns(BrandListResponse); //
+  rpc CreateBrand(BrandRequest) returns(BrandInfoResponse); //新建品牌信息
+  rpc DeleteBrand(BrandRequest) returns(google.protobuf.Empty); //删除品牌信息
+  rpc UpdateBrand(BrandRequest) returns(google.protobuf.Empty); //修改轮播图
+
+  //轮播图
+  rpc BannerList(google.protobuf.Empty)  returns(BannerListResponse);  //获取轮播表信息
+  rpc CreateBanner(BannerRequest) returns(BannerResponse);
+  rpc DeleteBanner(BannerRequest) returns(google.protobuf.Empty);
+  rpc UpdateBanner(BannerRequest) returns(google.protobuf.Empty);
+
+  //品牌分类
+  rpc CategoryBrandList(CategoryBrandFilterRequest) returns (CategoryBrandListResponse);
+  //通过一个分类获取下面所有的品牌
+  rpc GetCategoryBrandList(CategoryInfoRequest) returns(BrandListResponse);
+  rpc CreateCategoryBrand(CategoryBrandRequest) returns(CategoryBrandResponse); //创造品牌商品
+  rpc DeleteCategoryBrand(CategoryBrandRequest) returns(google.protobuf.Empty); //删除
+  rpc UpdateCategoryBrand(CategoryBrandRequest) returns(google.protobuf.Empty);
+}
+
+//商品分类部分
+//首页展示所有种类商品的返回参数 不需要传入值
+message  CategoryListResponse {
+  int32 total = 1; //记录总数
+  repeated CategoryInfoResponse data = 2; //要弄个data接住
+  string jsonData = 3; //要有分层展示
+}
+
+//通过一个类来获取子类商品的传入参数
+message CategoryListRequest {
+  int32 id = 1;
+  int32 level = 2;  //商品分类层数
+}
+
+//通过一个类来获取下属子分类商品的返回参数
+message SubCategoryListResponse{
+  int32 total = 1;
+  CategoryInfoResponse info = 2;  //外键 将本身的分类信息完整返回
+  repeated CategoryInfoResponse subCategorys = 3;  //查询下边的子分类
+}
+
+
+// 新建、更新子类商品的传入参数
+message  CategoryInfoRequest {
+  int32 id = 1;
+  string name = 2;
+  int32 parentCategory = 3; //父分类哪一层
+  int32 level = 4;  //属于哪一层
+  bool isTab = 5; //是否轮播图
+}
+
+//新建子类商品的返回参数
+message  CategoryInfoResponse {
+  int32 id = 1;
+  string name = 2;
+  int32 parentCategory = 3; //父类id
+  int32 level = 4;  //属于哪一层
+  bool isTab = 5; //是否轮播图
+}
+
+//删除子类商品的传入参数  不需要返回参数
+message DeleteCategoryRequest {
+  int32 id = 1;
+}
+
+//品牌方面
+//展示所有品牌的传入参数
+message BrandFilterRequest{
+  int32 pages = 1;  //分页
+  int32 pagePerNums = 2;
+}
+
+//展示所有品牌的返回参数
+message BrandListResponse {
+  int32 total = 1;
+  repeated  BrandInfoResponse data = 2;
+}
+
+//新建、删除、修改品牌的传入参数
+message BrandRequest {
+  int32 id = 1;
+  string name = 2;
+  string logo = 3;
+}
+
+//新建品牌的返回参数  修改查询不需要返回
+message BrandInfoResponse {
+  int32 id = 1;
+  string name = 2;
+  string logo = 3;
+}
+
+//轮播图方面
+//获取所有轮播图的返回参数  不需要输入参数
+message BannerListResponse {
+  int32 total = 1;
+  repeated BannerResponse data = 2;
+}
+
+//新建、删除、更新轮播图的输入参数
+message BannerRequest {
+  int32 id = 1;
+  int32 index = 2;
+  string image = 3;
+  string url = 4;
+}
+
+//新建轮播图的返回参数
+message  BannerResponse {
+  int32 id = 1;
+  int32 index = 2;
+  string image = 3;
+  string url = 4;
+}
+
+//品牌分类方面
+//展示品牌分类的列表的传入参数 类比展示所有用户  //分页
+message CategoryBrandFilterRequest {
+  int32 pages = 1;
+  int32 pagePerNums = 2;
+}
+
+//展示品牌分类的列表输出的参数
+message CategoryBrandListResponse {
+  int32 total = 1;
+  repeated CategoryBrandResponse data = 2;
+}
+
+//创建、更新、删除某品牌商品的输入参数
+message  CategoryBrandRequest {
+  int32 id = 1;
+  int32 categoryId = 2;
+  int32 brandId = 3;
+}
+
+//创建、更新、删除某品牌商品的输出参数
+message  CategoryBrandResponse {
+  int32 id = 1;
+  BrandInfoResponse brand = 2;
+  CategoryInfoResponse category = 3;
+}
+
+//商品相关部分
+//过滤(按条件查询)商品信息输入的参数
+message GoodsFilterRequest {
+  int32 priceMin = 1;  //价格区间
+  int32 priceMax = 2;
+  bool  isHot = 3;
+  bool  isNew = 4;
+  bool  isTab = 5;
+  int32 topCategory = 6;  //商品分类下 一级分类 二级分类 后面接口会写比较麻烦
+  int32 pages = 7;
+  int32 pagePerNums = 8;
+  string keyWords = 9;
+  int32 brand = 10;  //通过品牌查询商品
+}
+
+//过滤查询、批量查询商品信息返回的参数
+message GoodsListResponse {
+  int32 total = 1;
+  repeated  GoodsInfoResponse data = 2;
+}
+
+//批量获取商品信息的传入参数
+message BatchGoodsIdInfo {
+  repeated int32 id = 1; //通过id查询
+}
+
+//创建、更新商品信息的传入参数
+message CreateGoodsInfo {
+  int32 id = 1;
+  string name = 2;
+  string goodsSn = 3;
+  int32 stocks = 7;
+  float marketPrice = 8;
+  float shopPrice = 9;
+  string goodsBrief = 10;
+  string goodsDesc = 11;
+  bool shipFree = 12;
+  repeated string images = 13;
+  repeated string descImages = 14;
+  string goodsFrontImage = 15;
+  bool isNew = 16;
+  bool isHot = 17;
+  bool onSale = 18;
+  int32 categoryId = 19;
+  int32 brandId = 20;
+}
+
+//创建、查询单个商品信息的返回参数
+message  GoodsInfoResponse {
+  int32 id = 1;
+  int32 categoryId = 2;
+  string name = 3;
+  string goodsSn = 4;
+  int32 clickNum = 5;
+  int32 soldNum = 6;
+  int32 favNum = 7;
+  float marketPrice = 9;
+  float shopPrice = 10;
+  string goodsBrief = 11;
+  string goodsDesc = 12;
+  bool shipFree = 13;
+  repeated string images = 14;
+  repeated string descImages = 15;
+  string goodsFrontImage = 16;
+  bool isNew = 17;
+  bool isHot = 18;
+  bool onSale = 19;
+  int64 addTime = 20;
+  CategoryBriefInfoResponse category = 21;  //外键 查询所属分类
+  BrandInfoResponse brand = 22; //商品所属品牌信息
+}
+
+//删除单个商品信息的传入参数
+message DeleteGoodsInfo {
+  int32 id = 1;
+}
+
+//查询单个商品细节信息的传入参数
+message GoodsInfoRequest {
+  int32 id = 1;  //可以拓展 比如通过商品名称 来查询
+}
+
+//查询商品时还要查询到分类所属信息
+message CategoryBriefInfoResponse {
+  int32 id = 1;
+  string name = 2;
+}
