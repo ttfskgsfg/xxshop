@@ -1,0 +1,19 @@
+{
+  "host":"127.0.0.1",
+  "name": "order-web",
+  "port": 8023,
+  "tags":["xxshop", "icooc", "bobby", "goods", "web"],
+  "goods_srv": {
+    "name": "goods-srv"
+  },
+  "order_srv":{
+    "name": "order-srv"
+  },
+  "jwt": {
+    "key": "ai0%LjJ4WjBkRspBCuD@1bEBUJk3I7Da"
+  },
+  "consul": {
+    "host": "127.0.0.1",
+    "port": 8500
+  }
+}

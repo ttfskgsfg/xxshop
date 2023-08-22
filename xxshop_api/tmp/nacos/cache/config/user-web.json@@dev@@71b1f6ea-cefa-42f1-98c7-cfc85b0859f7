@@ -1,0 +1,27 @@
+{
+  "name": "user-web",
+  "host":"127.0.0.1",
+  "tags":["xxshop","icooi","bobby","user","web"],
+  "port": 8021,
+  "user_srv": {
+    "host": "127.0.0.1",
+    "port": 50051,
+    "name": "user-srv"
+  },
+  "jwt": {
+    "key": "ai0%LjJ4WjBkRspBCuD@1bEBUJk3I7Da"
+  },
+  "sms": {
+    "key": "LTAI5tGo8Wfs23Pv9xTS5Ggu",
+    "Secrect": "mvWs0CVOlHOUqRBy6czSSVBFEr8Tzx",
+    "expire": 300
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 8089
+  },
+  "consul": {
+    "host": "127.0.0.1",
+    "port": 8500
+  }
+}
