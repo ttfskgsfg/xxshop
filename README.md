@@ -1,15 +1,27 @@
 所用技术
+
 go 1.19
+
 gorm
+
 gin
+
 grpc
+
 jwt
+
 nacos
+
 consul
+
 jaeger
+
 redis 5.0
+
 mysql 8.0
+
 elasticsearch
+
 阿里云oss
 
 项目整体框架: 图片优化中
