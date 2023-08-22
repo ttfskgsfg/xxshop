@@ -18,16 +18,21 @@ elasticsearch
 先配置nacos配置文件
 
 docker安装配置命令 地址端口号供参考
+
 安装mysql
+
 docker run --name camps_mysql -e MYSQL_ROOT_PASSWORD=123456 -d -e MYSQL_DATABASE=camps_user -p 8086:3306 mysql:8.0
 
 安装redis
+
 docker run --name camps_redis -d -p 8089:6379 redis:6.2-rc2
 
 安装consul
+
 docker run -d -p 8500:8500 -p 8300:8300 -p 8301:8301 -p 8302:8302 -p 8600:8600/udp consul consul agent -dev -client=0.0.0.0
 
 安装nacos
+
 docker run --name nacos-standalone -e MODE=standalone -e JVM_XMS=512m -e JVM_XMS=512m -e JVM_XMN=256m -p 8848:8848 -d nacos/nacos-server:latest
 
 在web和srv各目录下的main文件即为各个微服务的启动入口
