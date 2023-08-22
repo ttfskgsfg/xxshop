@@ -1,0 +1,22 @@
+{
+  "name": "order-srv",
+  "host": "127.0.0.1",
+  "tags":["xxshop", "bobby", "order", "srv"],
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 8086,
+    "user": "root",
+    "password": "123456",
+    "db": "xxshop_order_srv"
+  },
+  "goods_srv": {
+    "name": "goods-srv"
+  },
+  "inventory_srv": {
+    "name": "inventory-srv"
+  },
+  "consul": {
+    "host": "127.0.0.1",
+    "port": 8500
+  }
+}
